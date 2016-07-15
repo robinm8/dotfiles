@@ -1,0 +1,36 @@
+#!/bin/sh
+
+import gnome-keyring-daemon -s --components=gpg,pkcs11,secrets,ssh &
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT SSH_AUTH_SOCK &
+
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
+eval $(ssh-agent) &
+
+powertop --auto-tune &
+
+xset +fp /usr/share/fonts/local
+xset fp rehash 
+xrdb ~/.Xresources
+setxkbmap f1
+xsetroot -cursor_name left_ptr
+hsetroot -fill ~/Pictures/bg.jpg 
+
+udiskie &
+
+xscreensaver -no-splash &
+
+compton &
+dunst -conf ~/.config/dunst/dunstrc &
+xfce4-panel --disable-wm-check &
+nm-applet &
+
+pulseaudio -D &
+
+sxhkd &
+#exec bspwm -c ~/.config/bspwm/bspwmrc
