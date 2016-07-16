@@ -31,24 +31,4 @@ xscreensaver.newLoginCommand: dm-tool switch-to-greeter
 
 Xft.dpi: 180
 
-URxvt.internalBorder: 19
-URxvt.cursorBlink: true
-URxvt.scrollBar: false
-URxvt*letterSpace: -1
-URxvt.savelines:        500
-
-URxvt*scrollTtyOutput:  true
-URxvt*scrollWithBuffer: true
-URxvt*scrollTtyKeypress: true
-
-URxvt.perl-ext-common:default,clipboard
-URxvt.keysym.M-c:perl:clipboard:copy
-URxvt.keysym.M-v:perl:clipboard:paste
-
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: icecat
-URxvt.matcher.button: 1
-
-URxvt.font:xft:Roboto:size=10
-
 Xcursor.size: 32
