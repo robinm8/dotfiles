@@ -32,5 +32,7 @@ nm-applet &
 
 pulseaudio -D &
 
+synclient TapButton1=1 TapButton2=3 TapButton3=2
+
 sxhkd &
 #exec bspwm -c ~/.config/bspwm/bspwmrc
