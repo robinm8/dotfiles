@@ -23,7 +23,9 @@ hsetroot -fill ~/Pictures/bg.jpg
 
 udiskie &
 
-xscreensaver -no-splash &
+#xscreensaver -no-splash &
+light-locker &
+xfce4-power-manager &
 
 compton &
 dunst -conf ~/.config/dunst/dunstrc &
@@ -35,4 +37,5 @@ pulseaudio -D &
 synclient TapButton1=1 TapButton2=3 TapButton3=2
 
 sxhkd &
+
 #exec bspwm -c ~/.config/bspwm/bspwmrc

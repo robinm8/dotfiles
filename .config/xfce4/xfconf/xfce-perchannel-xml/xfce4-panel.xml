@@ -5,7 +5,7 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=9;x=1287;y=16"/>
+      <property name="position" type="string" value="p=9;x=1282;y=22"/>
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="false"/>
       <property name="size" type="uint" value="42"/>
@@ -18,10 +18,8 @@
         <value type="int" value="10"/>
         <value type="int" value="11"/>
         <value type="int" value="8"/>
-        <value type="int" value="7"/>
         <value type="int" value="9"/>
         <value type="int" value="5"/>
-        <value type="int" value="1"/>
       </property>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="autohide-behavior" type="uint" value="0"/>
@@ -50,7 +48,6 @@
       <property name="digital-format" type="string" value="%T"/>
       <property name="mode" type="uint" value="2"/>
     </property>
-    <property name="plugin-7" type="string" value="battery"/>
     <property name="plugin-2" type="string" value="weather"/>
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
@@ -62,17 +59,23 @@
     <property name="plugin-3" type="string" value="applicationsmenu">
       <property name="show-menu-icons" type="bool" value="true"/>
       <property name="button-title" type="string" value=""/>
+      <property name="show-generic-names" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="false"/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="custom-menu" type="bool" value="false"/>
     </property>
     <property name="plugin-6" type="string" value="separator"/>
-    <property name="plugin-1" type="string" value="xfce4-hardware-monitor-plugin"/>
     <property name="plugin-11" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="steam"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="syncthing-gtk"/>
+        <value type="string" value="chromium"/>
+        <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="spotify"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
-      <property name="size-max" type="uint" value="28"/>
+      <property name="size-max" type="uint" value="64"/>
     </property>
     <property name="plugin-12" type="string" value="separator"/>
   </property>
