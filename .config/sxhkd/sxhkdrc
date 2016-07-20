@@ -187,8 +187,8 @@ super + @button{1-3}
         bspc pointer -u
 
 # Brightness
-XF86MonBrightness{Up,Down}
-  xbacklight {+,-} 5
+#XF86MonBrightness{Up,Down}
+#  xbacklight {+,-} 10
 
 # Keyboard Brightness
 alt + XF86MonBrightness{Up,Down}
