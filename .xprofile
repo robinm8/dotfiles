@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Start gnome keyring daemon for use with NetworkManager WiFi keys
 import gnome-keyring-daemon -s --components=gpg,pkcs11,secrets,ssh &
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT SSH_AUTH_SOCK &
 
@@ -12,30 +13,36 @@ fi
 
 eval $(ssh-agent) &
 
-powertop --auto-tune &
+# auto-tune precise battery statistics
+powertop --auto-tune & 
 
+# Start composite manager and screen locker
+compton &
+light-locker &
+
+# Persist X11 configuration
 xset +fp /usr/share/fonts/local
 xset fp rehash 
 xrdb ~/.Xresources
-setxkbmap f1
 xsetroot -cursor_name left_ptr
 hsetroot -fill ~/Pictures/bg.jpg 
 
-udiskie &
-
-#xscreensaver -no-splash &
-light-locker &
-xfce4-power-manager &
-
-compton &
+# Start notification service, network manager, and panel
 dunst -conf ~/.config/dunst/dunstrc &
 xfce4-panel --disable-wm-check &
 nm-applet &
 
+# Start audio proxy
 pulseaudio -D &
 
-synclient TapButton1=1 TapButton2=3 TapButton3=2
-
+# Bind keyboard keys
 sxhkd &
 
-#exec bspwm -c ~/.config/bspwm/bspwmrc
+# Start power manager
+xfce4-power-manager &
+
+# Mount removeable storage devices
+udiskie &
+
+# Enable tap-to-click
+synclient TapButton1=1 TapButton2=3 TapButton3=2
