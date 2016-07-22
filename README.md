@@ -4,6 +4,7 @@ Mark's Arch + bspwm dotfiles
 
 +  Xorg server - display server
 +  lightdm - display manager
++  lightdm-gtk-greeter - patched greeter
 +  bspwm - window manager
 +  compton - shadow and animation manager
 +  light-locker - session locker
@@ -18,6 +19,6 @@ Mark's Arch + bspwm dotfiles
 +  xfce4-panel - status bar
 +  network-manager - NIC connector
 +  network-manager-applet - neat panel plugin
-+  pulseaudio -- audio proxy
-+  udiskie -- auto-mount removable storage
++  pulseaudio - audio proxy
++  udiskie - auto-mount removable storage
 +  xf86-input-synaptics - configurable touchpad driver
