@@ -22,3 +22,10 @@ Mark's Arch + bspwm dotfiles
 +  pulseaudio - audio proxy
 +  udiskie - auto-mount removable storage
 +  xf86-input-synaptics - configurable touchpad driver
+
+## Install Dependencies with Pacaur
+
+```bash
+$ pacaur -S xorg-server lightdm bspwm compton light-locker hsetroot termite sxhkd gnome-keyring tlp powertop xfce4-power-manager dunst 
+xfce4-panel networkmanager network-manager-applet pulseaudio udiskie xf86-input-synaptics
+```
