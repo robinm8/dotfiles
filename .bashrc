@@ -71,7 +71,10 @@ alias perkele="quit"
 
 # Make output colorful
 alias ls="ls --color=auto"
+alias dir="dir --color=auto"
+alias dmesg="dmesg --color"
 alias grep="grep --color=auto"
+alias rm="rm -iv"
 alias la="ls -alhF"
 alias lm="la | less"
 alias ccal="cal | grep -C5 --color=auto "`date +%d | sed s/^0/\ /`""
@@ -114,7 +117,8 @@ export XDG_MUSIC_DIR=/home/mark/Music
 #eval $(ssh-agent)
 #ssh-add
 
-
-# fun
-
 PS1='┌──╼ [\w]\n└─────╼ '
+
+[ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+
+[ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
