@@ -1,6 +1,17 @@
-Mark's Arch + bspwm dotfiles
+## Latest Screenshot
 
-## Dependencies
+![Screenshot](https://raw.githubusercontent.com/robinm8/dotfiles/master/current.png "Screenshot")
+
+====================
+
+## Install Dependencies with Pacaur
+
+```bash
+$ pacaur -S xorg-server lightdm bspwm compton light-locker hsetroot termite sxhkd gnome-keyring tlp powertop xfce4-power-manager dunst
+xfce4-panel networkmanager network-manager-applet pulseaudio udiskie xf86-input-synaptics bash-completion pkgfile
+```
+
+## Dependency List
 
 +  Xorg server - display server
 +  lightdm - display manager
@@ -24,14 +35,3 @@ Mark's Arch + bspwm dotfiles
 +  xf86-input-synaptics - configurable touchpad driver
 +  bash-completion - enable auto-completion
 +  pkgfile - enable "command not found" hook
-
-## Install Dependencies with Pacaur
-
-```bash
-$ pacaur -S xorg-server lightdm bspwm compton light-locker hsetroot termite sxhkd gnome-keyring tlp powertop xfce4-power-manager dunst 
-xfce4-panel networkmanager network-manager-applet pulseaudio udiskie xf86-input-synaptics bash-completion pkgfile
-```
-
-## Latest Screenshot
-
-![Screenshot](https://raw.githubusercontent.com/robinm8/dotfiles/master/current.png "Screenshot")
