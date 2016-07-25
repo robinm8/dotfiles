@@ -31,3 +31,7 @@ Mark's Arch + bspwm dotfiles
 $ pacaur -S xorg-server lightdm bspwm compton light-locker hsetroot termite sxhkd gnome-keyring tlp powertop xfce4-power-manager dunst 
 xfce4-panel networkmanager network-manager-applet pulseaudio udiskie xf86-input-synaptics bash-completion pkgfile
 ```
+
+## Latest Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/robinm8/dotfiles/master/current.png "Screenshot")
