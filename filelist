@@ -1,0 +1,10 @@
+.bashrc
+.compton.conf
+.xprofile
+.Xresources
+.config/bspwm/bspwmrc
+.config/dunst/dunstrc
+.config/sxhkd/sxhkdrc
+.config/termite/config
+.config/xfce4/*
+

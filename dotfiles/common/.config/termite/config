@@ -1,0 +1,30 @@
+[options]
+clickable_url = true
+dynamic_title = true
+padding = 0
+font = Monospace 10
+
+#20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, .2)
+
+# if unset, will reverse foreground and background
+#highlight = #2f2f2f
+
+[colors]
+
+# special
+foreground      = #eee
+foreground_bold = #999
+cursor          = #eee
+background      = #000
+
+[hints]
+font = Monospace 10
+foreground = #dcdccc
+background = #3f3f3f
+active_foreground = #e68080
+active_background = #3f3f3f
+padding = 2
+border = #3f3f3f
+border_width = 0.5
+roundness = 2.0
